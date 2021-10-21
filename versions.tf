@@ -10,13 +10,3 @@ terraform {
       version = "~> 2.1"
     }
   }
-
-
-  backend "remote" {
-    organization = "jabproduction"
-
-    workspaces {
-      name = "3-Tier-Project"
-    }
-  }
-}
