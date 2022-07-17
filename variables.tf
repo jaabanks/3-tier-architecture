@@ -1,6 +1,7 @@
 variable "namespace" {
   description = "The project namespace to use for unique resource naming"
-  type        = "3-tier-architecture"
+  default     = "3-tier-architecture"
+  type        = string
 }
 
 variable "ssh_keypair" {

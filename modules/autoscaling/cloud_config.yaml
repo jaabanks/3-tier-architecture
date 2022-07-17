@@ -1,0 +1,10 @@
+#cloud-config
+
+runcmd:
+  - curl -sL https://api.github.com/repos/scottwinkler/vanilla-webserver-src/releases/latest | jq -r ".assets[].browser_download_url" | wget -qi - 
+  - unzip deployment.zip
+  - ./deployment/server
+packages:
+  - jq
+  - wget
+  - unzip 
