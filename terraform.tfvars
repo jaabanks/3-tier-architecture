@@ -1,2 +1,2 @@
-namespace = "tfproject-3-tier-architecture"
+namespace = "3-tier-architecture"
 region    = "us-east-1"
