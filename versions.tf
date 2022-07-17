@@ -4,14 +4,13 @@ terraform {
     hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
-      name = "3-tier-project"
+      name = "3-tier-architecture"
     }
   }
-  required_version = ">= 0.15"
   required_providers {
-    aws = {
+    aws = { 
       source  = "hashicorp/aws"
-      version = "~> 3.28"
+      version = "= 3.74.2"
     }
     cloudinit = {
       source  = "hashicorp/cloudinit"
